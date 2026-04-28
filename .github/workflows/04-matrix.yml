@@ -1,0 +1,15 @@
+# .github/workflows/04-matrix.yml
+
+name: 04. matrix 실습
+on:
+  workflow_dispatch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        fruits: [Apple, Banana, Kiwi]
+    steps:
+      - name: 과일 출력
+        run: echo "현재 과일: ${{ matrix.fruits }}"
