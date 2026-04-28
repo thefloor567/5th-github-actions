@@ -1,3 +1,5 @@
+# .github/workflows/05-share.yml
+
 name: 05. Artifact Job 간 공유
 on:
   workflow_dispatch
