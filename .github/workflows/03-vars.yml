@@ -19,3 +19,11 @@ jobs:
       - name: vars 출력
         run: |
           echo "URL: ${{ vars.API_URL }}"
+
+  produce:
+    runs-on: ubuntu-latest
+    environment: prod
+    steps:
+      - name: vars 출력
+        run: |
+          echo "URL: ${{ vars.API_URL }}"
